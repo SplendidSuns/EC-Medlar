@@ -1,0 +1,33 @@
+/* components/search/search.wxss */
+@import "/components/iconfont.wxss";
+      input{
+        display: inline-block;
+        width:70%;
+        border-radius: 10px;
+        height: 30px;
+        border: 1px solid gainsboro;
+        padding-left: 30px;
+    }
+    .search_input {
+        margin-top: 10px;
+        display: flex;
+    }
+    .icon-sousuo{  
+        position: relative;
+        left: 25px;
+        top:-1px;
+        color: gainsboro;
+    }
+    .icon-cancel{
+       position: relative;
+        right: 25px;
+        top:-1px;
+        color:lightgrey;
+    }
+    .doSearch{
+      width: 20%;
+      font-size: 14px;
+      right: 15px;
+      padding:0; 
+    }
+  

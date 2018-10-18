@@ -1,0 +1,101 @@
+<view>
+  <view class='navigator-tab'>
+    <view class='tab {{currentTab === "health"?"showCurrent":false}}' data-reply-type = 'health'  bindtap='changeTab'>养生堂</view>
+    <view class='tab {{currentTab === "delicious"?"showCurrent":false}}' data-reply-type ='delicious'  bindtap='changeTab'>美食苑</view>
+  </view>
+  <view wx:if="{{currentTab === 'health'}}" class='pageOne'>
+    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <scroll-view class='toutiao-content'>
+      <view class='toutiao-list'>
+        <view class='leftContent'>
+          <view class='firstLine'>每天这样做，活到99奥德赛法士大夫！不信你试试...</view>
+          <view class='secondLine'>
+            <icon class='iconfont icon-chakan'>99</icon>
+            <icon class='iconfont icon-dianzan'>22</icon>
+          </view>
+        </view>
+        <view class='rightContent'>
+          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        </view>
+      </view>
+      <view class='toutiao-list'>
+        <view class='leftContent'>
+          <view class='firstLine'>每天这样做，活到99！不信你试试...</view>
+          <view class='secondLine'>
+            <icon class='iconfont icon-chakan'>99</icon>
+            <icon class='iconfont icon-dianzan'>22</icon>
+          </view>
+        </view>
+        <view class='rightContent'>
+          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        </view>
+      </view>
+      <view class='toutiao-list'>
+        <view class='leftContent'>
+          <view class='firstLine'>每天这样做，活到99！不信你试试...</view>
+          <view class='secondLine'>
+            <icon class='iconfont icon-chakan'>99</icon>
+            <icon class='iconfont icon-dianzan'>22</icon>
+          </view>
+        </view>
+        <view class='rightContent'>
+          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        </view>
+      </view>
+      <view class='toutiao-list'>
+        <view class='leftContent'>
+          <view class='firstLine'>每天这样做，活到99！不信你试试...</view>
+          <view class='secondLine'>
+            <icon class='iconfont icon-chakan'>99</icon>
+            <icon class='iconfont icon-dianzan'>22</icon>
+          </view>
+        </view>
+        <view class='rightContent'>
+          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        </view>
+      </view>
+      <view class='toutiao-list'>
+        <view class='leftContent'>
+          <view class='firstLine'>每天这样做，活到99！不信你试试...</view>
+          <view class='secondLine'>
+            <icon class='iconfont icon-chakan'>99</icon>
+            <icon class='iconfont icon-dianzan'>22</icon>
+          </view>
+        </view>
+        <view class='rightContent'>
+          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        </view>
+      </view>
+      <view class='toutiao-list'>
+        <view class='leftContent'>
+          <view class='firstLine'>每天这样做，活到99！不信你试试...</view>
+          <view class='secondLine'>
+            <icon class='iconfont icon-chakan'>99</icon>
+            <icon class='iconfont icon-dianzan'>22</icon>
+          </view>
+        </view>
+        <view class='rightContent'>
+          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view wx:if="{{currentTab === 'delicious'}}" class='pageOne {{currentTab === "health"?"showCurrent":false}}'>
+    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <scroll-view class='toutiao-content'>
+      <view class='toutiao-list'>
+        <view class='leftContent'>
+          <view class='firstLine'>每天这样做，活到99！不信你试试...</view>
+          <view class='secondLine'>
+            <icon class='iconfont icon-chakan'>99</icon>
+            <icon class='iconfont icon-dianzan'>22</icon>
+          </view>
+        </view>
+        <view class='rightContent'>
+          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        </view>
+      </view>
+    
+    </scroll-view>
+  </view>
+</view>

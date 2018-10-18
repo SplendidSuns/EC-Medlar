@@ -1,0 +1,7 @@
+<!--components/search/search.wxml-->
+<view class='search_input'>
+  <icon class='iconfont icon-sousuo'></icon>
+  <input type="text" id="i-advanced-search" placeholder="请输入搜索内容" name='inputValue' value="{{inputValue}}" bindinput="inputSearchVal"></input>
+  <icon class='iconfont icon-cancel' bindtap='clearData'></icon>
+  <button type='mini' class='doSearch' bindtap='doSearch'>搜索</button>
+</view>

@@ -1,0 +1,79 @@
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='itemContent'>
+    <view class='listItem'>
+      <view class='firstLine'>
+        <view class='price'>
+          ￥132.90
+          <text class='countAfter'>券后价</text>
+          <text class='countBefore'>价格 ￥190.9</text>
+        </view>
+        <view class='share'>
+          <icon class='iconfont icon-fenxiang'></icon>
+        </view>
+      </view>
+      <view class='secondLine'>
+        <text>每日坚果混合坚果750g</text>
+      </view>
+      <view class='thirdLine'>
+        <view>包邮</view>
+        <view>11人购买</view>
+        <view>银川市</view>
+      </view>
+    </view>
+    <view class='tagCategory'>
+      <view>24小时发货 交易保障
+        <icon class='iconfont icon-youjiantou'></icon>
+      </view>
+      <view>规格 默认规格</view>
+    </view>
+    <view class='comments'>
+      <view class='comments-item'>
+        <view>买家评价(120)</view>
+        <icon class='iconfont icon-youjiantou'></icon>
+      </view>
+      <view class='headImage'>
+        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        <view>名字是什么</view>
+      </view>
+      <view class='content'>很有戏的挨个看了静安寺砥砺奋进拉萨还</view>
+      <view class='allComments'>
+        <button>查看所有评价</button>
+      </view>
+    </view>
+  </view>
+  <view class='content-bottom'>
+    <view class='goodsDetail'>
+      <view class='tag' data-reply-type='goodscontent' bindtap='changeTab' style='margin-left:23%;margin-right:10%;'>商品详情</view>
+      <view class='tag' data-reply-type='question' bindtap='changeTab'>常见问题</view>
+    </view>
+    <view class='page' wx:if="{{currentTab === 'goodscontent'}}">
+      商品详情
+    </view>
+    <view class='page' wx:if="{{currentTab === 'question'}}">
+      常见问题
+    </view>
+  </view>
+  <view class='tabbar-bottom'>
+    <view class='normal'>
+      <icon class='iconfont icon-kefu'></icon>
+      <view>客服</view>
+    </view>
+    <view class='normal'>
+      <icon class='iconfont icon-gouwuche'></icon>
+      <view>购物车</view>
+    </view>
+    <view class='buything'>
+      <button style='background-color: rgba(166, 166, 166, 1);'>加入购物车</button>
+    </view>
+    <view class='buything'>
+      <button>立即购买</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class='gouqiBody'>
+<view class='list'>
+  <image src='../images/test1.jpg'></image>
+  <view class='content'>
+  <text>标题</text>
+  <text>简介</text>
+  </view>
+</view>
+<view class='list'>
+  <image src='../images/test1.jpg'></image>
+  <view class='content'>
+  <text>标题</text>
+  <text>简介</text>
+  </view>
+</view>
+</view>

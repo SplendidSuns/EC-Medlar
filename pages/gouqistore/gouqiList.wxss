@@ -1,0 +1,22 @@
+/* pages/gouqistore/gouqiList.wxss */
+image{
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+.list{
+  display: flex;
+  border-bottom: 1px solid #e7e7eb;
+  padding: 10px 5px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  font-size: 12px;
+  margin-left: 5px;
+}
+text{
+  display: flex;
+}

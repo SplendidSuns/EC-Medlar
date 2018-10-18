@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "枸杞馆",
+  
+    "usingComponents": {
+      "dialog": "/components/dialog/dialog",
+      "search":"/components/search/search"
+    }
+}

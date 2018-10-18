@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wxml/main",
+    "pages/toutiao/toutiao",
+    "pages/goods/goodsItem",
+    "pages/gouqistore/gouqiList",
+    "components/dialog/dialog",
+    "components/search/search",
+    "components/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#d81e06",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath":"pages/images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath":"pages/images/index-se.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/wxml/main",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/wxml/main",
+        "text": "我"
+      }
+    ]
+  }
+}
+

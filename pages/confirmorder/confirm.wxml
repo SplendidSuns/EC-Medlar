@@ -1,0 +1,61 @@
+<!--pages/confirmorder/confirm.wxml-->
+<view class='confirm-order-page'>
+  <view class='receiver'>
+    <view>请填写收货人信息</view>
+    <icon class='iconfont icon-youjiantou'></icon>
+  </view>
+  <view class='payType'>
+    <view>支付方式</view>
+    <icon class='iconfont icon-duihao'></icon>
+  </view>
+  <view class='purchaseList'>
+    <view class='storeName'>天精小店</view>
+    <view class='productInfo' data-reply-type="hotItem">
+      <image bindtap='gotoItem' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <view class='goods-content'>
+        <view class='goods-title'>精选新疆干果500g*1盒</view>
+        <view class='goods-category'>天然生长果干</view>
+        <view class='third-line'>
+          <view class='price'>￥60.00</view>
+          <view class='num'>
+            *1
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='productInfo' data-reply-type="hotItem">
+      <image bindtap='gotoItem' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <view class='goods-content'>
+        <view class='goods-title'>精选新疆干果500g*1盒</view>
+        <view class='goods-category'>天然生长果干</view>
+        <view class='third-line'>
+          <view class='price'>￥60.00</view>
+          <view class='num'>
+            *1
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='priceInfo'>
+      <view class='firstLine'>
+        <view>共1件商品</view>
+        <view>商品金额：</view>
+        <view>1.00</view>
+      </view>
+      <view class='secondLine'>
+        <view></view>
+        <view>运费：</view>
+        <view>1.00</view>
+      </view>
+      <view class='thirdLine'>
+        <view></view>
+        <view>小计：</view>
+        <view>1.00</view>
+      </view>
+    </view>
+  </view>
+  <view class='paying'>
+    <view>合计:<text style='color:rgba(248, 72, 72, 1);font-weight:bold;'>￥90</text></view>
+    <button>去支付</button>
+  </view>
+</view>

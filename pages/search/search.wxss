@@ -1,0 +1,26 @@
+/* pages/search/search.wxss */
+.search-page{
+  width: 100%;
+}
+.hotSearch{
+  margin-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0.8rem;
+}
+.searchList{
+  width: 100%;
+  height: auto;
+  flex-direction: column-reverse;
+  margin-top: 15px;
+}
+button{
+  background-color: rgba(204, 204, 204, 1);
+  height: 31px;
+  width: auto;
+  font-size: 0.7rem;
+  margin: 2px 2%;
+  display: inline-block;
+  padding:0px 8px;
+  border-radius: 0px;
+}

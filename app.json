@@ -2,13 +2,20 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/wxml/main",
+    "pages/my/my",
     "pages/toutiao/toutiao",
     "pages/goods/goodsItem",
+    "pages/shoppingcart/cart",
     "pages/gouqistore/gouqiList",
+    "pages/search/search",
+    "pages/toutiaoContent/toutiao.detail",
+    "pages/category/category",
     "components/dialog/dialog",
-    "components/search/search",
-    "components/list/list"
+    "components/searchComponent/searchComponent",
+    "components/list/list",
+    "pages/confirmorder/confirm",
+    "pages/productList/productList",
+    "pages/orderList/orderList"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -28,15 +35,15 @@
         "selectedIconPath":"pages/images/index-se.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/category/category",
         "text": "分类"
       },
       {
-        "pagePath": "pages/wxml/main",
+        "pagePath": "pages/shoppingcart/cart",
         "text": "购物车"
       },
       {
-        "pagePath": "pages/wxml/main",
+        "pagePath": "pages/my/my",
         "text": "我"
       }
     ]

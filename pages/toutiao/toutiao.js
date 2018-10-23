@@ -76,5 +76,10 @@ Page({
         currentTab: event.currentTarget.dataset.replyType
       });
     }
+  },
+  gotoItem:function(){
+    wx.navigateTo({
+      url: '../toutiaoContent/toutiao.detail',
+    })
   }
 })

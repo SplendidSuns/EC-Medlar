@@ -3,6 +3,6 @@
   
     "usingComponents": {
       "dialog": "/components/dialog/dialog",
-      "search":"/components/search/search"
+      "search":"/components/searchComponent/searchComponent"
     }
 }

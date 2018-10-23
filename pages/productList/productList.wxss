@@ -1,0 +1,116 @@
+/* pages/productList/productList.wxss */
+@import '/components/searchComponent/searchComponent.wxss';
+search{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 45px;
+  background-color: white;
+}
+.filterLine{
+  display: flex;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.21);
+  margin-bottom: 25px;
+  padding-top: 3px;
+  position: fixed;
+  width: 100%;
+  top: 45px;
+}
+.filterItem{
+  width: 25%;
+  font-size: 0.8rem;
+  display: flex;
+  text-align: center;
+  padding-left: 5%;
+}
+.productList{
+  background-color: white;
+  height: auto;
+  margin-top: 80px;
+}
+.sortIcon{
+  display: flex;
+  flex-direction: row;
+}
+.icon-paixujiantoushang,.icon-paixujiantouxia{
+  height: 17px;
+  width: 1%;
+}
+.listItem {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  flex-wrap: wrap;
+  border-bottom:rgba(128, 128, 128, 0.21) solid 1px;
+  padding: 10px 5px;
+}
+
+.listItem>image {
+  width: 30%;
+  height: 116px;
+  margin-top: 20px;
+}
+
+.goods-content {
+  width: 70%;
+  height: 128px;
+  margin-top: 3px;
+}
+
+.goods-title {
+  font-size: 0.8rem;
+  height: 30px;
+  width: 100%;
+  padding: 5px 5%;
+}
+
+.goods-category {
+  font-size: 0.8rem;
+  height: 30px;
+  width: 100%;
+  padding: 5px 5%;
+}
+
+.third-line {
+  width: 100%;
+  height: 40px;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.price {
+  width: 40%;
+  height: 40px;
+  display: inline-block;
+  color: rgba(248, 72, 72, 1);
+  margin-top: 20px;
+  padding-left: 5%;
+}
+
+.num {
+  width: 50%;
+  height: 40px;
+  display: inline-block;
+  text-align: right;
+}
+.goods-title{
+  line-height: 40px;
+}
+.fourthLine{
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+}
+.fourthLine>view{
+  width: 50%;
+  font-size: 0.6rem;
+  padding-left: 8%;
+  color: rgba(80, 80, 80, 1);
+}
+.icon-gouwuche{
+  color: rgba(248, 72, 72, 1);
+}

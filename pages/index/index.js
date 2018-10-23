@@ -16,7 +16,9 @@ Page({
     indicatorDots: false,
     autoplay: false,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+    num:1,
+    hotItem:[],
   },
   changeIndicatorDots: function (e) {
     this.setData({
@@ -91,6 +93,35 @@ Page({
   gotoItem:function(){
     wx.navigateTo({
       url: '../goods/goodsItem',
+    })
+  },
+  //查询
+  gotoSearch: function () {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  },
+  onReady: function () {
+    //获得search组件
+    this.search = this.selectComponent("#search");
+  },
+  // 点击按钮减少数量
+  minNum: function(){
+    var that = this;
+    var minNum = that.data.num-1;
+    if(minNum<1){
+      minNum = 1;
+    }
+    this.setData({
+      num: minNum
+    })
+  },
+  //点击按钮增加数量
+  addNum:function(){
+    var that = this;
+    var addNum = that.data.num + 1;
+    this.setData({
+      num: addNum
     })
   }
 })

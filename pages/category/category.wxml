@@ -1,0 +1,9 @@
+<!--pages/category/category.wxml-->
+<view class='category-page'>
+<view>
+  <search></search>
+</view>
+<view class='category-menu'>
+
+</view>
+</view>

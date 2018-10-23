@@ -1,5 +1,4 @@
 {
-  "navigationBarTitleText": "天精小店",
   "usingComponents": {
     "dialog": "/components/dialog/dialog",
     "search": "/components/searchComponent/searchComponent"

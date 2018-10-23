@@ -6,7 +6,7 @@
   <view wx:if="{{currentTab === 'health'}}" class='pageOne'>
     <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
     <scroll-view class='toutiao-content'>
-      <view class='toutiao-list'>
+      <view class='toutiao-list' bindtap='gotoItem'>
         <view class='leftContent'>
           <view class='firstLine'>每天这样做，活到99奥德赛法士大夫！不信你试试...</view>
           <view class='secondLine'>

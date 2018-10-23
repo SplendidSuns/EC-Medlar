@@ -1,0 +1,64 @@
+/* pages/toutiaoContent/toutiao.detail.wxss */
+.toutiao-detail-page{
+  font-size: 0.8rem;
+}
+.title{
+  width: 94%;
+  height: auto;
+  padding: 10px 3%;
+  font-size: 1rem;
+}
+.content{
+  width: 94%;
+  height: auto;
+  padding: 10px 3%;
+}
+.content>text{
+  width: 100%;
+  height: auto;
+  display: flex;
+  word-break: break-all;
+}
+.content>image{
+  width: 100%;
+  margin-top: 10px;
+  height: 216px;
+  margin-bottom: 10px;
+}
+.goods-link{
+  width: 96%;
+  display: flex;
+  height: 97px;
+  padding: 5px 5px;
+  background-color: rgba(246, 246, 246, 1);
+  margin-bottom: 10px;
+}
+.goods-link>image{
+  width: 30%;
+  height: 87px;
+}
+.good-detail{
+  width: 70%;
+  padding-left: 5%;
+  height: 87px;
+  color: rgba(80, 80, 80, 1);
+  font-size: 0.8rem;
+}
+.firstLine{
+  height: 37px;
+  width:90%;
+  line-height: 20px;
+}
+.firstLine-right{
+  width: 100%;
+  height: 30px;
+  line-height: 20px;
+  text-align: right;
+}
+.firstLine-right>icon{
+  color: red;
+}
+.secondLine{
+  height: 27px;
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+<!--pages/toutiaoContent/toutiao.detail.wxml-->
+<view class='toutiao-detail-page'>
+  <view class='title'>养生原来这么简单，我竟然不知道</view>
+  <view class='content'>
+    <text>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <view class='goods-link'>
+      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <view class='good-detail'>
+        <view class='firstLine'>养生枣养生枣养生枣养生枣养生枣养生枣养生枣养生枣</view>
+        <view class='firstLine-right'><icon class='iconfont icon-youjiantou'></icon></view>
+        <view class='secondLine'>￥1</view>
+      </view>
+    </view>
+    <text>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+  </view>
+</view>

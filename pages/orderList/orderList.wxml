@@ -1,0 +1,14 @@
+<!--pages/orderList/orderList.wxml-->
+<view class='order-list-page'>
+<view class='tabbar'>
+  <view class='tabbarItem'>全部</view>
+  <view class='tabbarItem'>待付款</view>
+  <view class='tabbarItem'>待发货</view>
+  <view class='tabbarItem'>待收货</view>
+  <view class='tabbarItem'>待评价</view>
+</view>
+<view class='orderList'>
+
+
+</view>
+</view>

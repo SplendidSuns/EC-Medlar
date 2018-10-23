@@ -1,4 +1,4 @@
-// pages/gouqistore/gouqiList.js
+// pages/confirmorder/confirm.js
 Page({
 
   /**
@@ -19,18 +19,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    //获得dialog组件
-    this.dialog = this.selectComponent("#dialog");
-    //获得search组件
-    this.search = this.selectComponent("#search");
+
   },
-  showDialog() {
-    this.dialog.showDialog();
-  },
+
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
   },
 
   /**
@@ -66,15 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  //取消事件
-  _cancelEvent() {
-    console.log('你点击了取消');
-    this.dialog.hideDialog();
-  },
-  //确认事件
-  _confirmEvent() {
-    console.log('你点击了确定');
-    this.dialog.hideDialog();
   }
 })

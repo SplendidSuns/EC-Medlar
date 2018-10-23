@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<view class='search-page'>
+  <view>
+    <search></search>
+  </view>
+  <view class='hotSearch'>
+    <view>热门搜索</view>
+    <view class='searchList'>
+      <button>新疆干果</button>
+      <button>养生枸杞</button>
+      <button>陕西干果</button>
+      <button>山西干果</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,111 @@
+<!--pages/shoppingcart/cart.wxml-->
+<view class='shoppingcart-page'>
+  <view class='shopList'>
+    <view class='shopName'>
+      <checkbox></checkbox>
+      天精小店
+    </view>
+    <view class='shopItem'>
+      <checkbox checked='true'></checkbox>
+      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <view class='goods-content'>
+        <view class='goods-title'>精选新疆干果500g*1盒</view>
+        <view class='goods-category'>天然生长果干</view>
+        <view class='third-line'>
+          <view class='price'>￥60.00</view>
+          <view class='num'>
+            <button size='mini' type='default'>-</button>
+            <input type='number' cursor-spacing='0' value='1' />
+            <button size='mini' style='background-color:rgba(200, 74, 74, 1);color:white' type='default'>+</button>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='shopItem'>
+      <checkbox checked='true'></checkbox>
+      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <view class='goods-content'>
+        <view class='goods-title'>精选新疆干果500g*1盒</view>
+        <view class='goods-category'>天然生长果干</view>
+        <view class='third-line'>
+          <view class='price'>￥60.00</view>
+          <view class='num'>
+            <button size='mini' type='default'>-</button>
+            <input type='number' cursor-spacing='0' value='1' />
+            <button size='mini' style='background-color:rgba(200, 74, 74, 1);color:white' type='default'>+</button>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='shopItem'>
+      <checkbox checked='true'></checkbox>
+      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <view class='goods-content'>
+        <view class='goods-title'>精选新疆干果500g*1盒</view>
+        <view class='goods-category'>天然生长果干</view>
+        <view class='third-line'>
+          <view class='price'>￥60.00</view>
+          <view class='num'>
+            <button size='mini' type='default'>-</button>
+            <input type='number' cursor-spacing='0' value='1' />
+            <button size='mini' style='background-color:rgba(200, 74, 74, 1);color:white' type='default'>+</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='showLike'>
+    <view style='text-align:center;width:100%;height:30px;line-height:30px;'>———猜你喜欢———</view>
+    <view class='likeList'>
+      <view class='leftItem'>
+        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        <view class='goods-detail'>商品描述</view>
+        <view class='goods-price'>￥42</view>
+        <view class='thirdLine'>
+          <view>2910人已购买</view>
+          <icon class='iconfont icon-gouwuche'></icon>
+        </view>
+      </view>
+      <view class='rightItem'>
+        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        <view class='goods-detail'>商品描述</view>
+        <view class='goods-price'>￥42</view>
+        <view class='thirdLine'>
+          <view>2910人已购买</view>
+          <icon class='iconfont icon-gouwuche'></icon>
+        </view>
+      </view>
+    </view>
+    <view class='likeList'>
+      <view class='leftItem'>
+        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        <view class='goods-detail'>商品描述</view>
+        <view class='goods-price'>￥42</view>
+        <view class='thirdLine'>
+          <view>2910人已购买</view>
+          <icon class='iconfont icon-gouwuche'></icon>
+        </view>
+      </view>
+      <view class='rightItem'>
+        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        <view class='goods-detail'>商品描述</view>
+        <view class='goods-price'>￥42</view>
+        <view class='thirdLine'>
+          <view>2910人已购买</view>
+          <icon class='iconfont icon-gouwuche'></icon>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='tabbar'>
+    <view class='chooseAll'>
+      <checkbox>全选</checkbox>
+      <view class='totalPrice'>
+        <view>合计:￥90</view>
+        <view style='color:rgba(153, 153, 153, 1);font-size:0.6rem;'>不含运费</view>
+      </view>
+      <button bindtap='payfor'>结算</button>
+    </view>
+  </view> 
+</view>

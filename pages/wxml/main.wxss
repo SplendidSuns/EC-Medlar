@@ -1,4 +1,0 @@
-/* pages/wxml/main.wxss */
-.test{
-  background-color: green;
-}

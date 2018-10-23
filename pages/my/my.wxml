@@ -1,0 +1,40 @@
+<!--pages/my/my.wxml-->
+<view class='my-page'>
+  <view class='myInfo'>
+    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <view class='headInfo'>
+      <view class='name'>Curry</view>
+      <view class='tag'>最帅会员</view>
+    </view>
+  </view>
+  <view class='allOrder'>
+    <view class='ordertxt'>全部订单</view>
+    <view class='seeAll' bindtap='seeAllOrder'>查看全部订单<icon class='iconfont icon-youjiantou'></icon>
+    </view>
+  </view>
+  <view class='orderStatus'>
+    <view class='orderStatusItem'>
+      <icon class='iconfont icon-daifukuan1'></icon><text>待付款</text>
+    </view>
+    <view class='orderStatusItem'>
+      <icon class='iconfont icon-daifahuo'></icon><text>待发货</text>
+    </view>
+    <view class='orderStatusItem'>
+      <icon class='iconfont icon-daishouhuo1'></icon><text>待收货</text>
+    </view>
+    <view class='orderStatusItem'>
+      <icon class='iconfont icon-daipingjia01'></icon><text>待评价</text>
+    </view>
+  </view>
+  <view class='myItems'>
+  <view class='myItem'>
+  <icon class='iconfont icon-xiugaidizhi'></icon><text>地址管理</text>
+  </view>
+   <view class='myItem'>
+  <icon class='iconfont icon-icon-test'></icon><text>联系我们</text>
+  </view>
+   <view class='myItem'>
+  <icon class='iconfont icon-yijianfankui1'></icon><text>意见反馈</text>
+  </view>
+  </view>
+</view>

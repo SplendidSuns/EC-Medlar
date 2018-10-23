@@ -1,4 +1,5 @@
 <view class='gouqiBody'>
+<search></search>
 <view class='list'>
   <image src='../images/test1.jpg'></image>
   <view class='content'>

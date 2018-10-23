@@ -20,11 +20,11 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "天精小店",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#a9b7b7",
+    "color": "#515151",
     "selectedColor": "#d81e06",
     "borderStyle": "white",
     "list": [
@@ -35,14 +35,20 @@
         "selectedIconPath":"pages/images/index-se.png"
       },
       {
+        "iconPath": "pages/images/category.png",
+        "selectedIconPath": "pages/images/category-se.png",
         "pagePath": "pages/category/category",
         "text": "分类"
       },
       {
+        "iconPath": "pages/images/cart.png",
+        "selectedIconPath": "pages/images/cart-se.png",
         "pagePath": "pages/shoppingcart/cart",
         "text": "购物车"
       },
       {
+        "iconPath": "pages/images/my.png",
+        "selectedIconPath": "pages/images/my-se.png",
         "pagePath": "pages/my/my",
         "text": "我"
       }

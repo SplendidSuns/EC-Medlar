@@ -1,1 +1,44 @@
 /* pages/category/category.wxss */
+@import '/components/searchComponent/searchComponent.wxss';
+search{
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+.category-menu{
+  display: flex;
+  margin-top: 50px;
+}
+.leftMenu{
+  width: 20%;
+  height: 100%;
+  background-color: rgba(153, 153, 153, 0.21);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 40px;
+}
+.showCurrent{
+  background-color: white;
+}
+.rightMenu{
+  width: 80%;
+  height: auto;
+  background-color: white;
+  font-size: 0.6rem;
+  padding:10px 3%;
+  border-top: 1px solid rgba(153, 153, 153, 0.21);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.21);
+  
+}
+.rightMenuList{
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+
+}
+.rightMenuList>image{
+  width: 80%;
+  height: 61px;
+  margin: 10px 5%;
+}

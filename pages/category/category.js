@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentTab:'driedfruit'
   },
 
   /**
@@ -62,5 +62,19 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  changeTab: function (event) {
+    var that = this;
+    if (event.currentTarget.dataset.replyType == 'driedfruit') {
+      that.setData({
+        currentTab: event.currentTarget.dataset.replyType
+      });
+
+    }
+    if (event.currentTarget.dataset.replyType == 'medlar') {
+      that.setData({
+        currentTab: event.currentTarget.dataset.replyType
+      });
+    }
+  },
 })

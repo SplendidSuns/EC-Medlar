@@ -1,20 +1,11 @@
-// pages/goods/goodsItem.js
+// pages/address/address.list.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../images/tower.png',
-      '../images/ball.png',
-      '../images/write.png'
-    ],
-    indicatorDots: false,
-    autoplay: false,
-    interval: 5000,
-    duration: 1000,
-    currentTab: 'goodscontent',
+
   },
 
   /**
@@ -71,19 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  changeTab: function (event) {
-    var that = this;
-    if (event.currentTarget.dataset.replyType == 'goodscontent') {
-      that.setData({
-        currentTab: event.currentTarget.dataset.replyType
-      });
-
-    }
-    if (event.currentTarget.dataset.replyType == 'question') {
-      that.setData({
-        currentTab: event.currentTarget.dataset.replyType
-      });
-    }
   }
 })

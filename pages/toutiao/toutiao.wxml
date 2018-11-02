@@ -4,7 +4,7 @@
     <view class='tab {{currentTab === "delicious"?"showCurrent":false}}' data-reply-type ='delicious'  bindtap='changeTab'>美食苑</view>
   </view>
   <view wx:if="{{currentTab === 'health'}}" class='pageOne'>
-    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <image src='../images/tower.png'></image>
     <scroll-view class='toutiao-content'>
       <view class='toutiao-list' bindtap='gotoItem'>
         <view class='leftContent'>
@@ -15,7 +15,7 @@
           </view>
         </view>
         <view class='rightContent'>
-          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          <image src='../images/tower.png'></image>
         </view>
       </view>
       <view class='toutiao-list'>
@@ -27,7 +27,7 @@
           </view>
         </view>
         <view class='rightContent'>
-          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          <image src='../images/tower.png'></image>
         </view>
       </view>
       <view class='toutiao-list'>
@@ -39,7 +39,7 @@
           </view>
         </view>
         <view class='rightContent'>
-          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          <image src='../images/tower.png'></image>
         </view>
       </view>
       <view class='toutiao-list'>
@@ -51,7 +51,7 @@
           </view>
         </view>
         <view class='rightContent'>
-          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          <image src='../images/tower.png'></image>
         </view>
       </view>
       <view class='toutiao-list'>
@@ -63,7 +63,7 @@
           </view>
         </view>
         <view class='rightContent'>
-          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          <image src='../images/tower.png'></image>
         </view>
       </view>
       <view class='toutiao-list'>
@@ -75,13 +75,13 @@
           </view>
         </view>
         <view class='rightContent'>
-          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          <image src='../images/tower.png'></image>
         </view>
       </view>
     </scroll-view>
   </view>
   <view wx:if="{{currentTab === 'delicious'}}" class='pageOne {{currentTab === "health"?"showCurrent":false}}'>
-    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <image src='../images/tower.png'></image>
     <scroll-view class='toutiao-content'>
       <view class='toutiao-list'>
         <view class='leftContent'>
@@ -92,7 +92,7 @@
           </view>
         </view>
         <view class='rightContent'>
-          <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          <image src='../images/tower.png'></image>
         </view>
       </view>
     

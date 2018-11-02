@@ -11,7 +11,7 @@
   <view class='purchaseList'>
     <view class='storeName'>天精小店</view>
     <view class='productInfo' data-reply-type="hotItem">
-      <image bindtap='gotoItem' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image bindtap='gotoItem' src='../images/tower.png'></image>
       <view class='goods-content'>
         <view class='goods-title'>精选新疆干果500g*1盒</view>
         <view class='goods-category'>天然生长果干</view>
@@ -24,7 +24,7 @@
       </view>
     </view>
     <view class='productInfo' data-reply-type="hotItem">
-      <image bindtap='gotoItem' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image bindtap='gotoItem' src='../images/tower.png'></image>
       <view class='goods-content'>
         <view class='goods-title'>精选新疆干果500g*1盒</view>
         <view class='goods-category'>天然生长果干</view>

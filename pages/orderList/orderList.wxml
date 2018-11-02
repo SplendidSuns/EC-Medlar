@@ -1,14 +1,38 @@
 <!--pages/orderList/orderList.wxml-->
 <view class='order-list-page'>
-<view class='tabbar'>
-  <view class='tabbarItem'>全部</view>
-  <view class='tabbarItem'>待付款</view>
-  <view class='tabbarItem'>待发货</view>
-  <view class='tabbarItem'>待收货</view>
-  <view class='tabbarItem'>待评价</view>
-</view>
-<view class='orderList'>
-
-
-</view>
+  <view class='tabbar'>
+    <view class='tabbarItem {{currentTab === "all"?"select":null}}' data-reply-type = 'all'  bindtap='changeTab'>全部</view>
+    <view class='tabbarItem {{currentTab === "payment"?"select":null}}'data-reply-type = 'payment'  bindtap='changeTab'>待付款</view>
+    <view class='tabbarItem {{currentTab === "delivery"?"select":null}}' data-reply-type = 'delivery'  bindtap='changeTab'>待发货</view>
+    <view class='tabbarItem {{currentTab === "receive"?"select":null}}' data-reply-type = 'receive'  bindtap='changeTab'>待收货</view>
+    <view class='tabbarItem {{currentTab === "comment"?"select":null}}' data-reply-type = 'comment'  bindtap='changeTab'>待评价</view>
+  </view>
+  <view class='orderList' wx:if="{{currentTab === 'all'}}" >
+    <view class='shopList'>
+      <view class='shopName'>
+        <view class='storeName'>天精小店
+          <icon class='iconfont icon-youjiantou'></icon>
+        </view>
+        <view class='orderStatus'>订单状态</view>
+      </view>
+      <view class='shopItem' wx:for="{{carts}}">
+        <image src="{{item.image}}"></image>
+        <view class='goods-content'>
+          <view class='goods-title'>{{item.title}}</view>
+          <view class='goods-category'>{{item.category}}</view>
+          <view class='third-line'>
+            <view class='price'>{{item.price*item.num}}</view>
+            <view class='num'>*{{item.num}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='totalPrice'>共2件商品 合计￥169.00</view>      
+      <view class='lastLine'>
+        <button class='deleteBtn'>删除订单</button>
+        <button class='logistics'>查看物流</button>
+        <button class='comments'>评价</button>
+      </view>
+    </view>
+  </view>
 </view>

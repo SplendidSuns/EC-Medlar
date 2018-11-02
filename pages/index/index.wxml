@@ -23,37 +23,33 @@
     <view class='hotpot'>热门</view>
     <view class='headTitle'>这样做，活到99一定没问题</view>
     <text class='content'>简单一步，就能用一份美食</text>
-    <image class='foods-image' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <image class='foods-image' src='../images/tower.png'></image>
   </view>
   <view>
     <view class='hotSale'>热销推荐</view>
-    <view class='listItem' data-reply-type="hotItem">
-      <image bindtap='gotoItem' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <view class='listItem' data-reply-type="hotItem"  bindtap='gotoItem'>
+      <image src='../images/tower.png'></image>
       <view class='goods-content'>
         <view class='goods-title'>精选新疆干果500g*1盒</view>
         <view class='goods-category'>天然生长果干</view>
         <view class='third-line'>
           <view class='price'>￥60.00</view>
           <view class='num'>
-            <button size='mini' type='default' bindtap='minNum'>-</button>
-            <input disabled="disabled"  type='number' readOnly="true" cursor-spacing='0' value='{{num}}' />
-            <button size='mini' bindtap='addNum' style='background-color:rgba(200, 74, 74, 1);color:white' type='default'>+</button>
+          <icon class='iconfont icon-gouwuche'></icon>
           </view>
         </view>
       </view>
     </view>
 
-    <view class='listItem' data-reply-type="hotItem">
-      <image bindtap='gotoItem' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <view class='listItem' data-reply-type="hotItem" bindtap='gotoItem'>
+      <image  src='../images/tower.png'></image>
       <view class='goods-content'>
         <view class='goods-title'>精选新疆干果500g*1盒</view>
         <view class='goods-category'>天然生长果干</view>
         <view class='third-line'>
           <view class='price'>￥60.00</view>
           <view class='num'>
-            <button size='mini' type='default' bindtap='minNum'>-</button>
-            <input disabled="disabled"  type='number' readOnly="true" cursor-spacing='0' value='{{num}}' />
-            <button size='mini' bindtap='addNum' style='background-color:rgba(200, 74, 74, 1);color:white' type='default'>+</button>
+            <icon class='iconfont icon-gouwuche'></icon>
           </view>
         </view>
       </view>

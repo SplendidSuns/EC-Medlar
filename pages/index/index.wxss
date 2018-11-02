@@ -195,7 +195,9 @@ image:after{
   display: inline-block;
   text-align: right;
 }
-
+.num>icon{
+  color: rgba(248, 72, 72, 1);
+}
 .num>button {
   height: 50rpx;
   width: 50rpx;

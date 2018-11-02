@@ -39,7 +39,7 @@
         <icon class='iconfont icon-youjiantou'></icon>
       </view>
       <view class='headImage'>
-        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+        <image src='../images/tower.png'></image>
         <view>名字是什么</view>
       </view>
       <view class='content'>很有戏的挨个看了静安寺砥砺奋进拉萨还</view>

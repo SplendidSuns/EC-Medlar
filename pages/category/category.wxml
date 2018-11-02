@@ -14,53 +14,53 @@
   </view>
   <view class='rightMenu' wx:if="{{currentTab === 'driedfruit'}}">
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/tower.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/tower.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/tower.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/tower.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/tower.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/tower.png'></image>
       <view>新疆干果</view>
     </view>
   </view>
   <view class='rightMenu' wx:if="{{currentTab === 'medlar'}}">
     <view class='rightMenuList'>
-      <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'></image>
+      <image src='../images/tower.png'></image>
       <view>枸杞</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'></image>
+      <image src='../images/ball.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'></image>
+      <image src='../images/ball.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/ball.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/ball.png'></image>
       <view>新疆干果</view>
     </view>
     <view class='rightMenuList'>
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+      <image src='../images/ball.png'></image>
       <view>新疆干果</view>
     </view>
   </view>

@@ -2,9 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/my/my",
+    "pages/my/my", 
     "pages/toutiao/toutiao",
-    "pages/goods/goodsItem",
+    "pages/goods/goodsItem", 
     "pages/shoppingcart/cart",
     "pages/gouqistore/gouqiList",
     "pages/search/search",
@@ -15,7 +15,8 @@
     "components/list/list",
     "pages/confirmorder/confirm",
     "pages/productList/productList",
-    "pages/orderList/orderList"
+    "pages/orderList/orderList",
+    "pages/address/address.list"
   ],
   "window":{
     "backgroundTextStyle":"light",

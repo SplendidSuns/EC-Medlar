@@ -1,7 +1,7 @@
 <!--pages/my/my.wxml-->
 <view class='my-page'>
   <view class='myInfo'>
-    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+    <image src='../images/tower.png'></image>
     <view class='headInfo'>
       <view class='name'>Curry</view>
       <view class='tag'>最帅会员</view>

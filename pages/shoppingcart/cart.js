@@ -32,11 +32,11 @@ Page({
   onShow: function() {
     this.setData({
       hasList: true, //既然有数据了，那就设为true吧
-      cart: [{
+      carts: [{
           id: 1,
           title: '精选新疆干果500g*1盒',
           category: '天然生长果干',
-          image: 'pages/images/test1.jpg',
+          image: '../images/test1.jpg',
           num: 2,
           price: 60,
           selected: true
@@ -45,7 +45,7 @@ Page({
           id: 2,
           title: '精选新疆干果600g*1盒',
           category: '天然生长果干',
-          image: 'pages/images/test1.jpg',
+          image: '../images/test1.jpg',
           
           num: 1,
           price: 70,
@@ -103,7 +103,7 @@ Page({
       carts: carts,
       totalPrice: total.toFixed(2),
     });
-  },
+  }, 
   selectedList: function(e) {
     const index = e.currentTarget.dataset.index; //获取data-传进来的index
     let carts = this.data.carts; //获取购物车列表
@@ -134,23 +134,26 @@ Page({
     const index = e.currentTarget.dataset.index;
     let carts = this.data.carts;
     let num = carts[index].num;
-    num = num + 1;
-    carts[index].num = num;
-    this.setData({
-      carts: carts
-    });
-    this.getTotalPrice(); //重新获取总价
-
+    num = num - 1;
+    if(num>0){
+      carts[index].num = num;
+      this.setData({
+        carts: carts
+      });
+      this.getTotalPrice(); //重新获取总价
+    }else{
+      console.log('商品数量不能小于1');
+    }
   },
 
   addCount: function(e) {
     const index = e.currentTarget.dataset.index;
     let carts = this.data.carts;
     let num = carts[index].num;
-    if (num <= 1) {
+    if (num < 1) {
       return false;
     }
-    num = num - 1;
+    num = num + 1;
     carts[index].num = num;
     this.setData({
       carts: carts

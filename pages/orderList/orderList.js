@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    carts: [], //购物车列标
+    currentTab: 'all',
   },
 
   /**
@@ -26,7 +27,29 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.setData({
+      hasList: true, //既然有数据了，那就设为true吧
+      carts: [{
+        id: 1,
+        title: '精选新疆干果500g*1盒',
+        category: '天然生长果干',
+        image: '../images/test1.jpg',
+        num: 2,
+        price: 60,
+        selected: true
+      },
+      {
+        id: 2,
+        title: '精选新疆干果600g*1盒',
+        category: '天然生长果干',
+        image: '../images/test1.jpg',
 
+        num: 1,
+        price: 70,
+        selected: true
+      }
+      ]
+    })
   },
 
   /**
@@ -62,5 +85,34 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  changeTab: function (event) {
+    var that = this;
+    if (event.currentTarget.dataset.replyType == 'all') {
+      that.setData({
+        currentTab: event.currentTarget.dataset.replyType
+      });
+
+    }
+    if (event.currentTarget.dataset.replyType == 'payment') {
+      that.setData({
+        currentTab: event.currentTarget.dataset.replyType
+      });
+    }
+    if (event.currentTarget.dataset.replyType == 'delivery') {
+      that.setData({
+        currentTab: event.currentTarget.dataset.replyType
+      });
+    }
+    if (event.currentTarget.dataset.replyType == 'receive') {
+      that.setData({
+        currentTab: event.currentTarget.dataset.replyType
+      });
+    }
+    if (event.currentTarget.dataset.replyType == 'comment') {
+      that.setData({
+        currentTab: event.currentTarget.dataset.replyType
+      });
+    }
+  },
 })

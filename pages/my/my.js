@@ -5,7 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    ordermenu:[{
+      icon:'icon-daifukuan1',
+      text:'待付款'
+    }, {
+        icon: 'icon-daifahuo',
+        text: '待发货'
+      }, {
+        icon: 'icon-daishouhuo1',
+        text: '待收货'
+      }, {
+        icon: 'icon-daipingjia01',
+        text: '待评价'
+      }],
+    myMenu: [{
+      icon: 'icon-xiugaidizhi',
+      text: '地址管理'
+    }, {
+        icon: 'icon-icon-test',
+        text: '联系我们'
+    }, {
+        icon: 'icon-yijianfankui1',
+        text: '意见反馈'
+      }]
   },
 
   /**
@@ -67,5 +89,21 @@ Page({
     wx.navigateTo({
       url: '../orderList/orderList',
     })
+  },
+  gotoItem: function(e){
+    let status = e.currentTarget.dataset.name;
+    wx.navigateTo({
+      url: '../orderList/orderList?status=' + status,
+    })
+  },
+  gotoDetail: function(e){
+    let item = e.currentTarget.dataset.name;
+    if(item === '地址管理'){
+      wx.navigateTo({
+        url: '../address/address.list'
+      })
+    }
+    
   }
+
 })

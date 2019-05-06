@@ -1,4 +1,5 @@
 // pages/toutiao/toutiao.js
+const app = getApp();
 Page({
 
   /**
@@ -6,13 +7,22 @@ Page({
    */
   data: {
     currentTab:'health',
+    healthItems:[],
+    foodsItems:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 查询养生堂数据
+    app.queryByExamplePage('/EcHealthController/queryByExamplePage', {}).then((data) => {
+      this.setData({
+        healthItems:data
+      })
+      console.log(data);
+      console.log("in onLoad promise:", this.data)
+    });
   },
 
   /**
@@ -63,6 +73,7 @@ Page({
   onShareAppMessage: function () {
 
   },
+  // 切换tab刷新当前页面数据
   changeTab :function(event){
     var that = this;
     if (event.currentTarget.dataset.replyType == 'health'){
@@ -74,6 +85,13 @@ Page({
     if (event.currentTarget.dataset.replyType == 'delicious'){
       that.setData({
         currentTab: event.currentTarget.dataset.replyType
+      });
+      app.queryByExamplePage('/EcFoodsController/queryByExamplePage', {}).then((data) => {
+        that.setData({
+          foodsItems: data
+        })
+        console.log(data);
+        console.log("in onLoad promise:", this.data)
       });
     }
   },

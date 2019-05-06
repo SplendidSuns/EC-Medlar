@@ -1,61 +1,67 @@
 <!--pages/confirmorder/confirm.wxml-->
 <view class='confirm-order-page'>
-  <view class='receiver'>
+  <view class='receiver' bindtap='selectReciver' wx:if='{{!showFlag}}'>
     <view>请填写收货人信息</view>
     <icon class='iconfont icon-youjiantou'></icon>
   </view>
-  <view class='payType'>
+  <view class='address' bindtap='selectReciver' wx:if='{{showFlag}}'>
+    <view class='address-icon'>
+      <icon class='iconfont icon-wxbdingwei'></icon>
+    </view>
+    <view class='address-info'>
+      <view class='contact-info'>
+        <view class='name'>{{address.name}}</view>
+        <view>{{address.phone}}</view>
+        <view class='flag'>{{address.flag}}</view>
+      </view>
+      <view class='detail-address'>{{address.province}}{{address.city}}{{address.distinct}}{{address.detailAddress}}</view>
+    </view>
+  </view>
+  <view class='payType' bindtap='choosePayType'>
     <view>支付方式</view>
     <icon class='iconfont icon-duihao'></icon>
   </view>
+  <view class='wxPayType' wx:if='{{display}}'>
+  <view>微信支付</view>
+  <checkbox checked></checkbox>
+  </view>
   <view class='purchaseList'>
     <view class='storeName'>天精小店</view>
-    <view class='productInfo' data-reply-type="hotItem">
-      <image bindtap='gotoItem' src='../images/tower.png'></image>
+    <view class='productInfo' data-reply-type="hotItem" wx:for="{{buylist}}" wx:key='index'>
+      <image bindtap='gotoItem' src='{{item.image}}'></image>
       <view class='goods-content'>
-        <view class='goods-title'>精选新疆干果500g*1盒</view>
-        <view class='goods-category'>天然生长果干</view>
+        <view class='goods-title'>{{item.title}}</view>
+        <view class='goods-category'>{{item.category}}</view>
         <view class='third-line'>
-          <view class='price'>￥60.00</view>
+          <view class='price'>￥{{item.price}}</view>
           <view class='num'>
-            *1
-          </view>
-        </view>
-      </view>
-    </view>
-    <view class='productInfo' data-reply-type="hotItem">
-      <image bindtap='gotoItem' src='../images/tower.png'></image>
-      <view class='goods-content'>
-        <view class='goods-title'>精选新疆干果500g*1盒</view>
-        <view class='goods-category'>天然生长果干</view>
-        <view class='third-line'>
-          <view class='price'>￥60.00</view>
-          <view class='num'>
-            *1
+            ✖️{{item.num}}
           </view>
         </view>
       </view>
     </view>
     <view class='priceInfo'>
       <view class='firstLine'>
-        <view>共1件商品</view>
-        <view>商品金额：</view>
-        <view>1.00</view>
+        <view>共{{productsNum}}件商品</view>
+        <view>商品金额:</view>
+        <view>{{productsPrice}}</view>
       </view>
       <view class='secondLine'>
         <view></view>
         <view>运费：</view>
-        <view>1.00</view>
+        <view>{{shipping}}</view>
       </view>
-      <view class='thirdLine'>
+      <!-- <view class='thirdLine'>
         <view></view>
         <view>小计：</view>
         <view>1.00</view>
-      </view>
+      </view> -->
     </view>
   </view>
   <view class='paying'>
-    <view>合计:<text style='color:rgba(248, 72, 72, 1);font-weight:bold;'>￥90</text></view>
+    <view>合计:
+      <text style='color:rgba(248, 72, 72, 1);font-weight:bold;'>￥{{totalPrice}}</text>
+    </view>
     <button>去支付</button>
   </view>
 </view>

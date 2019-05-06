@@ -1,6 +1,7 @@
 /* pages/toutiaoContent/toutiao.detail.wxss */
 .toutiao-detail-page{
   font-size: 0.8rem;
+  background-color: white;
 }
 .title{
   width: 94%;

@@ -1,6 +1,7 @@
 /* pages/search/search.wxss */
 .search-page{
   width: 100%;
+  background-color: white;
 }
 .hotSearch{
   margin-top: 30px;

@@ -1,18 +1,35 @@
 // pages/address/address.list.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    pageSource: ' ',//页面来源
+    address: [{
+      id: '1',
+      name: '测试',
+      phone: '13245678909',
+      detailAddress: '悦湖家园',
+      isSelect: true,
+      flag: '默认',
+      province:'宁夏',
+      city: '银川',
+      distinct:'金凤区'
+    }]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if(!app.isEmpty(options.pagesource)){
+      this.setData({
+        pageSource: options.pagesource
+      })
+    }
+   
   },
 
   /**
@@ -62,5 +79,27 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  addAddress: function(){
+    wx.navigateTo({
+      url: '../editaddr/editaddr?status=NEW',
+    })
+  },
+  choose:function(e){
+    let address = e.currentTarget.dataset.item;
+    wx.setStorage({
+      key: "address",
+      data: address,
+      success: function () {
+        wx.navigateBack();   //返回上一个页面
+      }
+    })
+  },
+  edit: function(e){
+    let item = JSON.stringify(e.currentTarget.dataset.item);
+    wx.navigateTo({
+      url: '../editaddr/editaddr?status=UPDATE&&item='+item,
+    })
+    console.log(e);
   }
 })

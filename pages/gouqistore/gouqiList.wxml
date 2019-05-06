@@ -1,17 +1,24 @@
 <view class='gouqiBody'>
-<search></search>
-<view class='list'>
-  <image src='../images/test1.jpg'></image>
-  <view class='content'>
-  <text>标题</text>
-  <text>简介</text>
+  <view>
+    <search></search>
+    <sort bind:getSort="getSort"></sort>
   </view>
-</view>
-<view class='list'>
-  <image src='../images/test1.jpg'></image>
-  <view class='content'>
-  <text>标题</text>
-  <text>简介</text>
+  <view>
+    <view class='listItem' wx:for='{{products}}' wx:key='index'>
+      <image src='{{item.image}}'></image>
+      <view class='goods-content'>
+        <view bindtap='gotoItem' data-item='{{item}}'>
+          <view class='goods-title'>{{item.title}}</view>
+          <view class='goods-category'>{{item.category}}</view>
+        </view>
+        <view class='third-line'>
+          <view class='price'>￥{{item.price}}<text style='text-decoration:line-through;color:gray;font-size:10px; '>￥{{item.compPrice}}</text>
+          </view>
+          <view class='num' bindtap='gotoCart' data-item='{{item}}'>
+            <icon class='iconfont icon-gouwuche'></icon>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
-</view>
 </view>

@@ -19,9 +19,7 @@ Page({
       image: '../images/test1.jpg',
       num: 2,
       price: 60,
-      compPrice:60,
-      selected: false,
-   isTouchMove: false //默认隐藏删除
+      compPrice:60
     },
     {
       id: 2,
@@ -30,9 +28,7 @@ Page({
       image: '../images/test1.jpg',
       num: 1,
        price: 70,
-      compPrice: 60,
-      selected: false,
-      isTouchMove: false //默认隐藏删除
+      compPrice: 60
     }
     ]
   },

@@ -1,0 +1,31 @@
+<!--pages/editaddr/editaddr.wxml-->
+<view class='editaddr-page'>
+  <view class='card'>
+    <view class='name'>
+      <input placeholder='请输入收件人姓名' value='{{address.name}}'></input>
+    </view>
+    <view class='phone'>
+      <input placeholder='请输入联系人电话' value='{{address.phone}}'></input>
+    </view>
+    <view class='address'>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        <view class="picker">所在地区 {{region[0]}} {{region[1]}} {{region[2]}}</view>
+      </picker>
+    </view>
+    <view class='detail-address'>
+      <input placeholder='请输入详细地址' value='{{address.detailAddress}}'></input>
+    </view>
+    <view class='flag'>
+     <radio-group class="group" bindchange="radioChange">
+      <view class="attr_value"  wx:for='{{flag}}' wx:key='index'>
+           <radio color='' checked='{{item.checked}}' value="{{item.name}}" ></radio>
+           <label class='{{style===item.name?"radio_checked":"radio_label"}}'>{{item.name}}</label>
+      </view>
+</radio-group>
+    </view>
+    <view class='default-flag'>设为默认地址
+      <switch checked='{{address.isSelect}}' bindchange="switchChange" />
+    </view>
+    <button bindtap='saveAddress'>保存</button>
+  </view>
+</view>

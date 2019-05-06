@@ -1,0 +1,44 @@
+<!--pages/comments/comments.wxml-->
+<view class='comments'>
+  <view class='head'>
+    <view class='tag' data-reply-type='all' bindtap='changeTab'><text class='{{currentTab === "all"?"currentTag":null}}'>全部</text></view>
+    <view class='tag' data-reply-type='hasImage' bindtap='changeTab'><text class='{{currentTab === "hasImage"?"currentTag":null}}'>有图</text></view>
+  </view>
+  <view class='page' wx:if="{{currentTab === 'all'}}">
+    <view class='list-item'>
+      <view class='headImage'>
+        <image src='../images/tower.png'></image>
+        <view class='name'>名字是什么</view>
+      </view>
+      <view class='content'>
+      <view class='text'>很有戏的挨个看了静安寺砥砺奋进拉萨还</view>
+      <image src='../images/tower.png'></image>
+      <view class='date'>2019/4/10</view>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='headImage'>
+        <image src='../images/tower.png'></image>
+        <view class='name'>名字是什么</view>
+      </view>
+      <view class='content'>
+      <view class='text'>很有戏的挨个看了静安寺砥砺奋进拉萨还</view>
+      <image src='../images/tower.png'></image>
+      <view class='date'>2019/4/10</view>
+      </view>
+    </view>
+  </view>
+  <view class='page' wx:if="{{currentTab === 'hasImage'}}">
+     <view class='list-item'>
+      <view class='headImage'>
+        <image src='../images/tower.png'></image>
+        <view class='name'>名字是什么</view>
+      </view>
+      <view class='content'>
+      <view class='text'>很有戏的挨个看了静安寺砥砺奋进拉萨还</view>
+      <image src='../images/tower.png'></image>
+      <view class='date'>2019/4/10</view>
+      </view>
+    </view>
+  </view>
+</view>

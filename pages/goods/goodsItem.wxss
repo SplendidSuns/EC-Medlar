@@ -1,4 +1,7 @@
 /* pages/goods/goodsItem.wxss */
+.goodsItem-page{
+  background-color: white;
+}
 image{
   width: 100%;
 }
@@ -150,7 +153,7 @@ image{
 }
 .normal{
   width: 20%;
-  border-top: 1px solid  rgba(166, 166, 166, 1);
+  border-top: 1px solid  #eef3f5;
 }
 .buything{
   width: 30%;

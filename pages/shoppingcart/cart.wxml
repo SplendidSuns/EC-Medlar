@@ -1,26 +1,29 @@
 <!--pages/shoppingcart/cart.wxml-->
 <view class='shoppingcart-page'>
   <view class='shopList'>
-    <view class='shopName'>
-      <checkbox></checkbox>
+    <!-- <view class='shopName'>
+      <checkbox checked='{{shopChecked}}'></checkbox>
       天精小店
-    </view>
-    <view class='shopItem' wx:for="{{carts}}">
-      <checkbox wx:if="{{item.selected}}" bindtap="selectedList" data-index="{{index}}" checked="{{item.selected}}"></checkbox>
-      <checkbox wx:else bindtap="selectedList" data-index="{{index}}"></checkbox>
-      <image src="{{item.image}}"></image>
-      <view class='goods-content'>
-        <view class='goods-title'>{{item.title}}</view>
-        <view class='goods-category'>{{item.category}}</view>
-        <view class='third-line'>
-          <view class='price'>{{item.price*item.num}}</view>
-          <view class='num'>
-            <button size='mini' type='default' bindtap='minusCount' data-index="{{index}}">-</button>
-            <input type='number' cursor-spacing='0' value='{{item.num}}' />
-            <button size='mini' style='background-color:rgba(200, 74, 74, 1);color:white' type='default' bindtap='addCount' data-index="{{index}}">+</button>
+    </view> -->
+    <view  wx:for="{{carts}}" wx:key='index' class='shopItem {{item.isTouchMove ? "touch-move-active": ""}}' data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove">
+      <view class='shopItem-content'>
+        <checkbox wx:if="{{item.selected}}" bindtap="selectedList" data-index="{{index}}" checked="{{item.selected}}"></checkbox>
+        <checkbox wx:else bindtap="selectedList" data-index="{{index}}"></checkbox>
+        <image src="{{item.image}}"></image>
+        <view class='goods-content'>
+          <view class='goods-title'>{{item.title}}</view>
+          <view class='goods-category'>{{item.category}}</view>
+          <view class='third-line'>
+            <view class='price'>￥{{item.price*item.num}}</view>
+            <view class='num'>
+              <button size='mini' type='default' bindtap='minusCount' data-index="{{index}}">-</button>
+              <input type='number' cursor-spacing='0' value='{{item.num}}' />
+              <button size='mini' style='background-color:rgba(200, 74, 74, 1);color:white' type='default' bindtap='addCount' data-index="{{index}}">+</button>
+            </view>
           </view>
         </view>
       </view>
+     <view class="del" catchtap="deleteList" data-index="{{index}}">删除</view>
     </view>
   </view>
   <!--<view class='showLike'>
@@ -68,8 +71,8 @@
   </view>-->
   <view class='tabbar'>
     <view class='chooseAll'>
-      <checkbox wx:if="{{selectAllStatus}}" type='success_circle' color='#fff' bindtap='selectAll' >全选</checkbox>
-      <checkbox wx:else type='circle' color='#fff' bindtap='selectAll' >全选</checkbox>
+      <checkbox wx:if="{{selectAllStatus}}" type='success_circle' color='#fff' bindtap='selectAll' checked='{{selectAllStatus}}'>全选</checkbox>
+      <checkbox wx:else type='circle' color='#fff' bindtap='selectAll' checked='{{selectAllStatus}}'>全选</checkbox>
       <view class='totalPrice'>
         <view>{{totalPrice}}</view>
         <view style='color:rgba(153, 153, 153, 1);font-size:0.6rem;'>不含运费</view>

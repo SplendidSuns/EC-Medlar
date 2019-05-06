@@ -1,6 +1,6 @@
-<view>
+<view class='goodsItem-page'>
   <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{imgUrls}}" wx:key='index'>
       <swiper-item>
         <image src="{{item}}" class="slide-image" width="355" height="150" />
       </swiper-item>
@@ -10,16 +10,18 @@
     <view class='listItem'>
       <view class='firstLine'>
         <view class='price'>
-          ￥132.90
+          ￥{{product.compPrice}}
           <text class='countAfter'>券后价</text>
-          <text class='countBefore'>价格 ￥190.9</text>
+          <text class='countBefore'>
+          价格 <text style='text-decoration:line-through;color:gray;font-size:10px;'>￥{{product.price}}</text>
+          </text>
         </view>
         <view class='share'>
           <icon class='iconfont icon-fenxiang'></icon>
         </view>
       </view>
       <view class='secondLine'>
-        <text>每日坚果混合坚果750g</text>
+        <text>{{product.name}}</text>
       </view>
       <view class='thirdLine'>
         <view>包邮</view>
@@ -44,7 +46,7 @@
       </view>
       <view class='content'>很有戏的挨个看了静安寺砥砺奋进拉萨还</view>
       <view class='allComments'>
-        <button>查看所有评价</button>
+        <button bindtap='gotoAllComments'>查看所有评价</button>
       </view>
     </view>
   </view>

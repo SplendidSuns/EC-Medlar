@@ -1,34 +1,18 @@
-// pages/goods/goodsItem.js
-const app = getApp();
+// pages/comments/comments.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../images/tower.png',
-      '../images/ball.png',
-      '../images/write.png'
-    ],
-    indicatorDots: false,
-    autoplay: false,
-    interval: 5000,
-    duration: 1000,
-    currentTab: 'goodscontent',
-    product:{}
+    currentTab: 'all',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(!app.isEmpty(options.detail)){
-      let product = JSON.parse(options.detail);
-      this.setData({
-        product: product
-      })
-    }
+
   },
 
   /**
@@ -81,21 +65,16 @@ Page({
   },
   changeTab: function (event) {
     var that = this;
-    if (event.currentTarget.dataset.replyType == 'goodscontent') {
+    if (event.currentTarget.dataset.replyType == 'hasImage') {
       that.setData({
         currentTab: event.currentTarget.dataset.replyType
       });
 
     }
-    if (event.currentTarget.dataset.replyType == 'question') {
+    if (event.currentTarget.dataset.replyType == 'all') {
       that.setData({
         currentTab: event.currentTarget.dataset.replyType
       });
     }
-  },
-  gotoAllComments: function(){
-    wx.navigateTo({
-      url: '../comments/comments',
-    })
   }
 })

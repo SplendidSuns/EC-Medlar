@@ -10,8 +10,10 @@
         font-size: 0.8rem;
     }
     .search_input {
-        margin-top: 10px;
+        padding-top: 10px;
         display: flex;
+        height: auto;
+        background-color: white;
     }
     .icon-sousuo{  
         position: relative;

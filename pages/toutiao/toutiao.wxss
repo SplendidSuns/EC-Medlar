@@ -1,4 +1,7 @@
 /* pages/toutiao/toutiao.wxss */
+.toutiao-page{
+  background-color: white;
+}
 .navigator-tab{
   width: 100%;
   display: flex;

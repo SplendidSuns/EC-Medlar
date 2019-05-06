@@ -1,0 +1,28 @@
+<!--components/sort/sort.wxml-->
+<view class='sort'>
+  <view class="sort-list" wx:for-item="item" data-name="{{item.name}}" bindtap='sortItem' wx:for='{{sortList}}' wx:key='index' id="{{item.code}}">{{item.name}}
+    <view class='list-wrapper'>
+      <icon class='sort-icon iconfont icon-triangle-arrow-up'></icon>
+      <icon class='sort-icon iconfont icon-triangle-arrow-down'></icon>
+    </view>
+  </view>
+  <view class="sort-list" bindtap='filter'>筛选
+    <view class='list-wrapper'>
+      <icon class='sort-icon iconfont icon-shaixuan2'></icon>
+    </view>
+  </view>
+  <view class='animation' animation="{{animationData}}" style="height:100%;position:fixed;visibility:{{show ? 'visible':'hidden'}}">
+    <view class='animation-content'>
+      <view class='pricezone'>
+        <view class='pztitle'>
+          <text>价格区间（元）</text>
+        </view>
+        <view class='inputzone'>
+          <input type='digit' bindinput="bindKeyInput" placeholder="最低价" />
+          <text style='color:#ddd'>-</text>
+          <input type='digit' bindinput="bindKeyInput" placeholder="最高价" />
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>

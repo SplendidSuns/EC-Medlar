@@ -1,28 +1,32 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/my/my", 
+    "pages/my/my",
     "pages/toutiao/toutiao",
-    "pages/goods/goodsItem", 
+    "pages/goods/goodsItem",
     "pages/shoppingcart/cart",
     "pages/gouqistore/gouqiList",
     "pages/search/search",
     "pages/toutiaoContent/toutiao.detail",
     "pages/category/category",
     "components/dialog/dialog",
+    "components/sort/sort",
     "components/searchComponent/searchComponent",
     "components/list/list",
     "pages/confirmorder/confirm",
     "pages/productList/productList",
     "pages/orderList/orderList",
-    "pages/address/address.list"
+    "pages/address/address.list",
+    "pages/list/list",
+    "pages/editaddr/editaddr",
+    "pages/comments/comments"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "天精小店",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#515151",
@@ -30,10 +34,10 @@
     "borderStyle": "white",
     "list": [
       {
-        "iconPath":"pages/images/index.png",
+        "iconPath": "pages/images/index.png",
         "pagePath": "pages/index/index",
         "text": "首页",
-        "selectedIconPath":"pages/images/index-se.png"
+        "selectedIconPath": "pages/images/index-se.png"
       },
       {
         "iconPath": "pages/images/category.png",
@@ -54,6 +58,6 @@
         "text": "我"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
-

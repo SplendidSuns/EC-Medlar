@@ -1,2 +1,25 @@
 <!--pages/address/address.list.wxml-->
-<text>pages/address/address.list.wxml</text>
+<view class='address-page'>
+  <view class='address-item' wx:for="{{address}}"  wx:key='index'>
+    <view class='choose-address' bindtap='choose' wx:for-item="item" data-item="{{item}}" >
+      <view class='choose'>
+        <checkbox wx:if="{{pageSource==='order'}}" checked='{{item.isSelect}}'></checkbox>
+      </view>
+      <view class='address-info'>
+        <view class='contact-info'>
+          <view class='name'>{{item.name}}</view>
+          <view class='phone'>{{item.phone}}</view>
+          <view class='flag'>{{item.flag}}</view>
+        </view>
+        <view class='address'>{{item.province}}{{item.city}}{{item.distinct}}{{item.detailAddress}}</view>
+      </view>
+    </view>
+    <view class='edit' bindtap='edit' data-item='{{item}}'>编辑</view>
+  </view>
+  <view class='info'>
+    <text>已加载完数据~</text>
+  </view>
+  <view class='footer'>
+    <button bindtap='addAddress'>添加收货地址</button>
+  </view>
+</view>

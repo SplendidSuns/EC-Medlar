@@ -1,15 +1,15 @@
 <!--index.wxml-->
 <view class='body'>
-<view class='category'>
-<icon class='iconfont icon-mulu1'></icon>
-<view class='search_input'>
-  <icon class='iconfont icon-sousuo'></icon>
-  <input type="text" id="i-advanced-search" placeholder="请输入搜索内容" bindtap='gotoSearch' name='inputValue' value="{{inputValue}}" bindinput="inputSearchVal"></input>
-  <icon class='iconfont icon-cancel' bindtap='clearData'></icon>
-</view>
-</view>
+  <view class='category'>
+    <icon bindtap='gotoCategory' class='iconfont icon-mulu1'></icon>
+    <view class='search_input'>
+      <icon class='iconfont icon-sousuo'></icon>
+      <input type="text" id="i-advanced-search" placeholder="请输入搜索内容" bindtap='gotoSearch' name='inputValue' value="{{inputValue}}" bindinput="inputSearchVal"></input>
+      <icon class='iconfont icon-cancel' bindtap='clearData'></icon>
+    </view>
+  </view>
   <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
       <swiper-item>
         <image src="{{item}}" class="slide-image" width="355" height="150" />
       </swiper-item>
@@ -27,32 +27,21 @@
   </view>
   <view>
     <view class='hotSale'>热销推荐</view>
-    <view class='listItem' data-reply-type="hotItem"  bindtap='gotoItem'>
-      <image src='../images/tower.png'></image>
+    <view class='listItem' wx:for='{{hotSale}}' wx:key='index'>
+      <image src='{{item.image}}'></image>
       <view class='goods-content'>
-        <view class='goods-title'>精选新疆干果500g*1盒</view>
-        <view class='goods-category'>天然生长果干</view>
-        <view class='third-line'>
-          <view class='price'>￥60.00</view>
-          <view class='num'>
-          <icon class='iconfont icon-gouwuche'></icon>
-          </view>
+        <view bindtap='gotoItem' data-item='{{item}}'>
+          <view class='goods-title'>{{item.title}}</view>
+          <view class='goods-category'>{{item.category}}</view>
         </view>
-      </view>
-    </view>
-
-    <view class='listItem' data-reply-type="hotItem" bindtap='gotoItem'>
-      <image  src='../images/tower.png'></image>
-      <view class='goods-content'>
-        <view class='goods-title'>精选新疆干果500g*1盒</view>
-        <view class='goods-category'>天然生长果干</view>
         <view class='third-line'>
-          <view class='price'>￥60.00</view>
-          <view class='num'>
+          <view class='price'>￥{{item.price}} <text style='text-decoration:line-through;color:gray;font-size:10px; '>￥{{item.compPrice}}</text></view>
+          <view class='num' bindtap='gotoCart' data-item='{{item}}'>
             <icon class='iconfont icon-gouwuche'></icon>
           </view>
         </view>
       </view>
     </view>
   </view>
+  <view class='allProduct' bindtap='gotoList'>查看全部>></view>
 </view>

@@ -13,6 +13,16 @@ Page({
       '../images/write.png',
       '../images/tower.png'
     ],
+    hotSale:[{
+      id: 1,
+      title: '精选新疆干果500g*1盒',
+      category: '天然生长果干',
+      image: '../images/test1.jpg',
+      num: 1,
+      price: 60,
+      compPrice: 60,
+      selected: true
+    }],
     indicatorDots: false,
     autoplay: false,
     interval: 5000,
@@ -90,9 +100,21 @@ Page({
       url: '../toutiao/toutiao',
     })
   },
-  gotoItem:function(){
+  gotoItem:function(e){
+    let detail = JSON.stringify(e.currentTarget.dataset.item);
     wx.navigateTo({
-      url: '../goods/goodsItem',
+      url: '../goods/goodsItem?detail='+detail,
+    })
+  },
+  gotoCart:function(e){
+    wx.showToast({
+      title: '添加购物车成功!',
+      icon: 'success',
+      duration: 2000
+    })
+    app.globalData.carts = e.currentTarget.dataset.item;
+    wx.switchTab({
+      url: '../shoppingcart/cart'
     })
   },
   //查询
@@ -124,4 +146,14 @@ Page({
       num: addNum
     })
   },
+  gotoCategory:function(){
+    wx.switchTab({
+      url: '../category/category',
+    })
+  },
+  gotoList:function(){
+    wx.navigateTo({
+      url: '../gouqistore/gouqiList?title='+'热销推荐',
+    })
+  }
 })
